@@ -92,3 +92,11 @@ section .box button{
     height: 25px;
     width: 100px;
 }
+
+section .box p{
+    width: 50px;
+    height: 15px;
+    background-color: aliceblue;
+    text-align: center;
+    font-size: 12px;
+}
