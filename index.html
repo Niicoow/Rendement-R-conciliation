@@ -10,57 +10,54 @@
     <header>
         <h1 class="fs-20 flexRowCenter">Rendement / Réconciliation</h1>
     </header>
-    <section class="flexCollCenter mgTop-50px">
-
-        <div class="box flexRowSpace">
-            <label for="qTa" class="fs-15"> A. Quantité de flacons livrés : </label>
-            <input type="tel" id="qTa">
-        </div>
-        <div class="box flexRowSpace">
-            <label for="qTb"> B. Quantité de flacons rejetés : </label>
-            <input type="tel" id="qTb">
-        </div>
-        <div class="box flexRowSpace">
-            <label for="qTc"> C. Quantité de flacons conditionnés : </label>
-            <input type="tel" id="qTc">
-        </div>
-        <div class="box flexRowSpace">
-            <label for="qTd"> D. Prélèvements qualité : </label>
-            <input type="tel" id="qTd">
-        </div>
-        <div class="box flexRowSpace">
-            <label for="qTe"> E. Quantité de flacons retournés : </label>
-            <input type="tel" id="qTe">
-        </div>
-
-        <div class="box flexRowSpace">
-            <button type="button" onclick="effacer()">Effacer</button>
-            <button type="button">Calculer</button>
-        </div>
+    <div class="pageCentre">
         
+        <section class="flexCollCenter mgTop-50px">
+            <div class="box flexRowSpace">
+                <label for="qTa" class="fs-15"> A. Quantité de flacons livrés : </label>
+                <input type="tel" id="qTa">
+            </div>
+            <div class="box flexRowSpace">
+                <label for="qTb" class="fs-15"> B. Quantité de flacons rejetés : </label>
+                <input type="tel" id="qTb">
+            </div>
+            <div class="box flexRowSpace">
+                <label for="qTc" class="fs-15"> C. Quantité de flacons conditionnés : </label>
+                <input type="tel" id="qTc">
+            </div>
+            <div class="box flexRowSpace">
+                <label for="qTd" class="fs-15"> D. Prélèvements qualité : </label>
+                <input type="tel" id="qTd">
+            </div>
+            <div class="box flexRowSpace">
+                <label for="qTe" class="fs-15"> E. Quantité de flacons retournés : </label>
+                <input type="tel" id="qTe">
+            </div>
+            <div class="box flexRowSpace">
+                <button type="button" onclick="effacer()">Effacer</button>
+                <button type="button" onclick="calculer()">Calculer</button>
+            </div>
+        </section>
+        <section class="flexCollCenter mgTop-50px">
+            <div class="box flexRowSpace">
+                <label for="resultRendement" class="fs-15"> Rendement : </label>
+                <p class="zoneResultat" id="resultRendement"></p>
+            </div>
+            <div class="box flexRowSpace">
+                <label for="diffRendement" class="fs-15"> Quantité écart rendement : </label>
+                <p class="zoneResultat" id="diffRendement"></p>
+            </div>
+            <div class="box flexRowSpace">
+                <label for="resultReconciliation" class="fs-15"> Réconciliation : </label>
+                <p class="zoneResultat" id="resultReconciliation"></p>
+            </div>
+            <div class="box flexCollCenter mgTop-20px">
+                <p class="zoneResultatText" id="explanation"></p>
+            </div>
+        </section>
 
-    </section>
-    <section class="flexCollCenter mgTop-50px">
-
-        <div class="box flexRowSpace">
-            <label for="resultRendement" class="fs-15"> Rendement : </label>
-            <p></p>
-        </div>
-
-        <div class="box flexRowSpace">
-            <label for="diffRendement"> Quantité écart rendement : </label>
-            <p></p>
-        </div>
-
-        <div class="box flexRowSpace">
-            <label for="resultReconciliation"> Réconciliation : </label>
-            <p></p>
-        </div>
-        
-        
-        
-
-    </section>
+    </div>
+    
 
 
     <script src="config/main.js"></script>

@@ -1,102 +1,119 @@
-*{
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
     margin: 0;
     padding: 0;
 }
-body{
+.pageCentre{
+    margin-top: 50px;
     display: flex;
     flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+section{
+    width: 60%;
+}
+header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+h1 {
+    margin: 0;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.flexRowCenter {
+    display: flex;
     justify-content: center;
     align-items: center;
-
 }
 
+.flexCollCenter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
-.fs-20{
+.flexRowSpace {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin: 10px 0;
+}
+
+.fs-20 {
     font-size: 20px;
-
 }
 
-.fs-15{
+.fs-15 {
     font-size: 15px;
 }
 
-.flexRowCenter{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-
-}
-
-.flexCollCenter{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
-}
-.flexRowSpace{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-
-}
-
-.mgTop-50px{
+.mgTop-50px {
     margin-top: 50px;
-
 }
 
-
-
-
-
-
-
-
-
-
-
-
-header{
-    width: 100%;
+.mgTop-20px {
+    margin-top: 20px;
 }
 
-header h1{
-    width: 100%;
-    height: 50px;
-    background-color: beige;
-    
-    
-
-}
-section{
-    width: 80%;
-    height: 100%;
-    background-color: bisque;
-    gap: 20px;
-    padding: 20px;
-    border-radius: 10px;
-    border: 1px solid black;
+input[type="tel"] {
+    padding: 5px;
+    font-size: 15px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
 }
 
-section .box input{
-    width: 50px;
+button {
+    padding: 10px 20px;
+    font-size: 15px;
+    color: white;
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
 }
 
-section .box{
-    width: 100%;
+button:hover {
+    background-color: #45a049;
 }
 
-section .box button{
-    height: 25px;
-    width: 100px;
-}
-
-section .box p{
-    width: 50px;
-    height: 15px;
-    background-color: aliceblue;
+p {
+    margin: 0;
+    padding: 5px;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    min-width: 100px;
     text-align: center;
-    font-size: 12px;
+}
+
+.zoneResultat{
+    padding: 5px;
+    font-size: 15px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    height: 13px;
+    width: 150px;
+}
+
+.zoneResultatText{
+    padding: 5px;
+    font-size: 15px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    height: 100px;
+    width: 750px;
+
 }
