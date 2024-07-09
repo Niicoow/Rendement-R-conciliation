@@ -4,21 +4,34 @@ body {
     margin: 0;
     padding: 0;
 }
+
+section{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 .pageCentre{
     margin-top: 50px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 100%;
+    justify-content: space-around;
+    width: 50%;
 }
-section{
-    width: 60%;
-}
+
+
+
 header {
     background-color: #4CAF50;
     color: white;
     padding: 10px 0;
     text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
 }
 
 h1 {
@@ -107,13 +120,25 @@ p {
     height: 13px;
     width: 150px;
 }
-
+.box{
+    width: 90%;
+}
 .zoneResultatText{
     padding: 5px;
     font-size: 15px;
     border: 1px solid #ccc;
     border-radius: 3px;
     height: 100px;
-    width: 750px;
+    width: 100%;
 
+}
+
+@media screen and (max-width: 400px){ 
+    .pageCentre{
+        width: 90%;
+    }
+    .zoneResultatText{
+        font-size: 10px;
+    }
+    
 }

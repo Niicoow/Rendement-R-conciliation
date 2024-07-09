@@ -7,26 +7,26 @@ function calculer() {
     const qTe = parseFloat(document.getElementById('qTe').value) || 0;
 
     // Calcul du rendement
-    const rendement = ((qTc + qTd + qTe) / qTa) * 100;
+    const rendement = ((qTc + qTd)/(qTa - qTe)) * 100;
 
     // Calcul de l'écart de rendement
-    const diffRendement = qTa - (qTc + qTd + qTe);
+    const diffRendement = qTa - (qTb + qTc + qTd + qTe);
 
     // Calcul de la réconciliation
-    const reconciliation = ((qTc + qTd + qTe + qTb) / qTa) * 100;
+    const reconciliation = ((qTa - qTb - qTc - qTd- qTe)/ qTa) * 100;
 
     // Affichage des résultats
-    document.getElementById('resultRendement').textContent = rendement.toFixed(2) + '%';
+    document.getElementById('resultRendement').textContent = rendement.toFixed(3) + '%';
     document.getElementById('diffRendement').textContent = diffRendement;
-    document.getElementById('resultReconciliation').textContent = reconciliation.toFixed(2) + '%';
+    document.getElementById('resultReconciliation').textContent = reconciliation.toFixed(3) + '%';
 
     // Explication des calculs
     const explanation = `
         Rendement : 
-        ((C + D + E) / A) * 100 = ((${qTc} + ${qTd} + ${qTe}) / ${qTa}) * 100 = ${rendement.toFixed(2)}%.\n
+        ( ( C + D ) / ( A - E ) ) * 100  = ( ( ${qTc} + ${qTd} ) / ( ${qTa} - ${qTe} ) ) * 100 = ${rendement.toFixed(2)}%.\n
         
         Réconciliation :
-        ((C + D + E + B) / A) * 100 = ((${qTc} + ${qTd} + ${qTe} + ${qTb}) / ${qTa}) * 100 = ${reconciliation.toFixed(2)}%.
+        ( ( A - B - C - D - E ) / A ) * 100 = ( ( ${qTa} - ${qTb} - ${qTc} - ${qTd} - ${qTe}) / ${qTa}) * 100 = ${reconciliation.toFixed(2)}%.
         L'écart de réconciliation est : A - (C + D + E) = ${qTa} - (${qTc} + ${qTd} + ${qTe}) = ${diffRendement}.
     `
     ;
